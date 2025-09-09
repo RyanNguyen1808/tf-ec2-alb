@@ -5,7 +5,7 @@ variable "name_prefix" {
   type        = string
 }
 
-variable "vpc_name" {
+variable "vpc_id" {
   description = "An existing VPC to use"
   type        = string
 }

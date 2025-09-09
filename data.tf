@@ -1,8 +1,5 @@
 data "aws_vpc" "selected" {
-  filter {
-    name   = "tag:Name"
-    values = [var.vpc_name]
-  }
+  id = var.vpc_id
 }
 
 data "aws_subnets" "public" {
